@@ -33,3 +33,16 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 # Git merge develop
 
 [7] git merge develop [8] git push --set-upstream origin release-1.0.0
+
+# Check out master
+
+[9] git tag 'v1.0.0'
+
+# Remove branch Realease
+
+[10] git branch -d release-1.0.0 [11] git push origin -d release-1.0.0
+
+# Remove branch Feature
+
+[12] git branch -d feature/1-add-cart.model.js [13] git push origin -d
+feature/1-add-cart.model.js
