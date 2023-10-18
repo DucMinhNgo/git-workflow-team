@@ -17,3 +17,7 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 
 - ![Alt text](image-1.png)
 - ![Alt text](image-2.png)
+
+# Create new release branch 1.0.0
+
+[4] git checkout -b release-1.0.0 develop
