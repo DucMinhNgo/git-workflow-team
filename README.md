@@ -21,3 +21,11 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 # Create new release branch 1.0.0
 
 [4] git checkout -b release-1.0.0 develop
+
+# Create Tag
+
+[5] git tag 'v1.0.0'
+
+# Push Tag
+
+[6] git push --tags
