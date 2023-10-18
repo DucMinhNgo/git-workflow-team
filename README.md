@@ -29,3 +29,7 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 # Push Tag
 
 [6] git push --tags
+
+# Git merge develop
+
+[7] git merge develop
