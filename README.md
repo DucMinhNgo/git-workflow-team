@@ -14,3 +14,6 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 # Right Commit
 
 [3] git commit -m '#1 - dustin add cart model file'
+
+- ![Alt text](image-1.png)
+- ![Alt text](image-2.png)
