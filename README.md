@@ -22,6 +22,10 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 
 [4] git checkout -b release-1.0.0 develop
 
+# Update release
+
+git commit -m 'publish release v1.0.0'
+
 # Create Tag
 
 [5] git tag 'v1.0.0'
