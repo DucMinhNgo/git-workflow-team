@@ -32,4 +32,4 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 
 # Git merge develop
 
-[7] git merge develop
+[7] git merge develop [8] git push --set-upstream origin release-1.0.0
