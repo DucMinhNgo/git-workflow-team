@@ -1,0 +1,1 @@
+console.log("create stripe1.model.js")
