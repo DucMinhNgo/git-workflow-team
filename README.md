@@ -59,5 +59,9 @@ feature/1-add-cart.model.js
 
 # pull -r develop (avoid push force other)
 
+# note: if used to merge never rebase
+
 [13] git rebase develop [14] git rebase --continue [15] git add . [16] git push
 -f
+
+# always merge code into master not rebase
