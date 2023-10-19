@@ -50,3 +50,14 @@ git commit -m 'publish release v1.0.0'
 
 [12] git branch -d feature/1-add-cart.model.js [13] git push origin -d
 feature/1-add-cart.model.js
+
+# Rebase Branch Feature
+
+# change something inside file after that :wq
+
+# Checkout to your branch
+
+# pull -r develop (avoid push force other)
+
+[13] git rebase develop [14] git rebase --continue [15] git add . [16] git push
+-f
