@@ -80,3 +80,10 @@ feature/1-add-cart.model.js
 [23] git stash pop
 
 
+# Git reflog git log
+[24] git relog
+[25] git log --oneline -n 10 --no-merges
+
+# Git cherry-pick
+[26] git checkout -b [branch] [commit]
+[27] git cherry-pick [commit] [commit]
