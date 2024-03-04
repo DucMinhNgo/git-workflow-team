@@ -67,4 +67,16 @@ feature/1-add-cart.model.js
 # always merge code into master not rebase
 
 # Merge new update to before commit
-git commit --amend
+[17] git commit --amend
+
+# Remove and Re add remote
+[18] git remote rm origin
+[19] git remote add origin [path]
+[20] git remote -v
+
+# Test git stash
+[21] git stash
+[22] git stash list
+[23] git stash pop
+
+
