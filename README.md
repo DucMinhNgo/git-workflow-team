@@ -65,3 +65,6 @@ feature/1-add-cart.model.js
 -f
 
 # always merge code into master not rebase
+
+# Merge new update to before commit
+git commit --amend
