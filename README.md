@@ -87,3 +87,5 @@ feature/1-add-cart.model.js
 # Git cherry-pick
 [26] git checkout -b [branch] [commit]
 [27] git cherry-pick [commit] [commit]
+[28] git cherry-pick --abort
+[29] git cherry-pick -m 1 --no-commit [commit]^..[commit]
