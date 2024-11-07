@@ -76,7 +76,19 @@ feature/1-add-cart.model.js
 
 # Test git stash
 
-[21] git stash [22] git stash list [23] git stash pop
+- Case 1:
+
+[21] git stash
+
+[22] git stash list
+
+[23] git stash pop
+
+- Case 2:
+
+[21-1] git stash save new-idea
+
+[23] git stash apply 0
 
 # Git reflog git log
 
