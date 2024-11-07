@@ -103,3 +103,7 @@ feature/1-add-cart.model.js
 [27] git log --oneline
 
 [28] git revert [ea584a8]
+
+# Rename
+
+[29] git branch -M new_name
