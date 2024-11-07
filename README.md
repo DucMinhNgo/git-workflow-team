@@ -67,23 +67,27 @@ feature/1-add-cart.model.js
 # always merge code into master not rebase
 
 # Merge new update to before commit
+
 [17] git commit --amend
 
 # Remove and Re add remote
-[18] git remote rm origin
-[19] git remote add origin [path]
-[20] git remote -v
+
+[18] git remote rm origin [19] git remote add origin [path] [20] git remote -v
 
 # Test git stash
-[21] git stash
-[22] git stash list
-[23] git stash pop
 
+[21] git stash [22] git stash list [23] git stash pop
 
 # Git reflog git log
-[24] git relog
-[25] git log --oneline -n 10 --no-merges
+
+[24] git relog [25] git log --oneline -n 10 --no-merges
 
 # Git cherry-pick
-[26] git checkout -b [branch] [commit]
-[27] git cherry-pick [commit] [commit]
+
+[26] git checkout -b [branch] [commit] [27] git cherry-pick [commit] [commit]
+
+# Git revert
+
+[27] git log --oneline
+
+[28] git revert [ea584a8]
