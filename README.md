@@ -120,6 +120,6 @@ feature/1-add-cart.model.js
 
 # Git commit soft
 
-[32] git log --oneline
+[32] git log (về lại commit trên origin)
 
 [33] git reset --soft f2f71c8dd19cfda5427587e509981b44f55ade98
