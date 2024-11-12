@@ -96,7 +96,9 @@ feature/1-add-cart.model.js
 
 # Git cherry-pick
 
-[26] git checkout -b [branch] [commit] [27] git cherry-pick [commit] [commit]
+[26] git checkout -b [branch] [commit]
+
+[27] git cherry-pick [commit] [commit]
 
 # Git revert
 
@@ -107,3 +109,17 @@ feature/1-add-cart.model.js
 # Rename
 
 [29] git branch -M new_name
+
+# Decorator log
+
+[30] git log --graph --decorate --oneline
+
+# Switch back branch
+
+[31] git checkout -
+
+# Git commit soft
+
+[32] git log --oneline
+
+[33] git reset --soft f2f71c8dd19cfda5427587e509981b44f55ade98
