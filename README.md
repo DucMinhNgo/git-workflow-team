@@ -40,6 +40,38 @@ git commit -m 'publish release v1.0.0'
 
 # Check out master
 
+🌟 Theo phiên bản phần mềm (semantic versioning)
+Đây là cách phổ biến nhất:
+
+v1.0.0 – bản phát hành đầu tiên
+
+v2.1.3 – bản vá lỗi/phát triển tiếp theo
+
+> Gợi ý: Thêm mô tả vào GitHub Release để tag này có ngữ cảnh rõ ràng hơn.
+
+🛠️ Theo mục đích hoặc milestone
+init-release – bản release đầu tiên
+
+hotfix-login-crash
+
+beta-v1.2
+
+> Dùng khi tag không theo phiên bản nhưng phản ánh mốc quan trọng trong dự án.
+
+🔀 Kết hợp số issue/task
+v1.4.0-issue#123
+
+fix/bug#456
+
+> Dễ truy vết commit và task tương ứng nếu dùng trong teamwork.
+
+✨ Một số tips khi đặt tag
+Viết không dấu, dùng - để phân tách từ.
+
+Nhất quán tên prefix (v cho version, fix cho sửa lỗi,...).
+
+Tránh dùng ký tự đặc biệt (ngoại trừ . và -) để dễ thao tác trong dòng lệnh.
+
 [9] git tag 'v1.0.0'
 
 # Remove branch Realease
