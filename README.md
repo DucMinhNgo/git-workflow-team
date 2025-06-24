@@ -34,6 +34,8 @@ git commit -m 'publish release v1.0.0'
 
 [6] git push --tags
 
+[6] git push --set-upstream origin v1.0.0
+
 # Git merge develop
 
 [7] git merge develop [8] git push --set-upstream origin release-1.0.0
