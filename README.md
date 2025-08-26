@@ -157,3 +157,21 @@ feature/1-add-cart.model.js
 [32] git log (về lại commit trên origin)
 
 [33] git reset --soft f2f71c8dd19cfda5427587e509981b44f55ade98
+
+sh```
+Cả hai lệnh đều thay đổi lịch sử commit, nên nếu bạn đã đẩy (push) các commit lên remote repository, việc sử dụng git reset có thể gây rắc rối khi làm việc nhóm. Trong trường hợp này, cần sử dụng git revert để tạo commit mới thay vì xóa lịch sử.
+Nếu bạn vô tình sử dụng git reset --hard và mất dữ liệu, bạn có thể thử khôi phục bằng cách kiểm tra git reflog để tìm commit bị mất và reset lại.
+
+A -- B -- C (HEAD)
+
+Sau khi chạy git reset --soft HEAD~1:
+
+HEAD trỏ về commit B.
+Các thay đổi trong commit C vẫn ở staging area, bạn có thể commit lại.
+
+
+Sau khi chạy git reset --hard HEAD~1:
+
+HEAD trỏ về commit B.
+Mọi thay đổi trong commit C bị xóa hoàn toàn khỏi staging area và working directory.
+```
