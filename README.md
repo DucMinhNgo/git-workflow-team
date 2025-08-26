@@ -158,7 +158,7 @@ feature/1-add-cart.model.js
 
 [33] git reset --soft f2f71c8dd19cfda5427587e509981b44f55ade98
 
-sh```
+```sh
 Cả hai lệnh đều thay đổi lịch sử commit, nên nếu bạn đã đẩy (push) các commit lên remote repository, việc sử dụng git reset có thể gây rắc rối khi làm việc nhóm. Trong trường hợp này, cần sử dụng git revert để tạo commit mới thay vì xóa lịch sử.
 Nếu bạn vô tình sử dụng git reset --hard và mất dữ liệu, bạn có thể thử khôi phục bằng cách kiểm tra git reflog để tìm commit bị mất và reset lại.
 
