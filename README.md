@@ -149,7 +149,15 @@ feature/1-add-cart.model.js
 [26] git checkout -b [branch] [commit]
 
 [27] git cherry-pick [commit] [commit]
+
+1. git log
+2. git cherry-pick abc1234
+3. git add <tên-tệp>
+4. git cherry-pick --continue
+5. git cherry-pick --abort
+6. git log
 ```
+<img width="756" height="263" alt="image" src="https://github.com/user-attachments/assets/2d368061-c8f8-47e9-a9f2-df96d16d09f6" />
 # Git revert
 ```sh
 [27] git log --oneline
