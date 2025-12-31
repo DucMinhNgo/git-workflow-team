@@ -4,41 +4,49 @@ https://www.youtube.com/watch?v=vQgcl8VouLU
 ![Alt text](image.png)
 
 # Create new branch
-
+```sh
 [1] git push -u origin develop
+```
 
 # Create new branch 1 is issue number
-
+```sh
 [2] git checkout -b feature/1-add-cart.model.js develop
+```
 
 # Right Commit
-
+```sh
 [3] git commit -m '#1 - dustin add cart model file'
+```
 
 - ![Alt text](image-1.png)
 - ![Alt text](image-2.png)
 
 # Create new release branch 1.0.0
-
+```sh
 [4] git checkout -b release-1.0.0 develop
+```
 
 # Update release
-
+```sh
 git commit -m 'publish release v1.0.0'
+```
 
 # Create Tag
-
+```sh
 [5] git tag 'v1.0.0'
+```
 
 # Push Tag
-
+```sh
 [6] git push --tags
 
 [6] git push --set-upstream origin v1.0.0
+```
 
 # Git merge develop
-
+```sh
 [7] git merge develop [8] git push --set-upstream origin release-1.0.0
+```
 
 # Check out master
 
@@ -73,17 +81,21 @@ Viết không dấu, dùng - để phân tách từ.
 Nhất quán tên prefix (v cho version, fix cho sửa lỗi,...).
 
 Tránh dùng ký tự đặc biệt (ngoại trừ . và -) để dễ thao tác trong dòng lệnh.
-
+```sh
 [9] git tag 'v1.0.0'
+```
 
 # Remove branch Realease
-
+```sh
 [10] git branch -d release-1.0.0 [11] git push origin -d release-1.0.0
+```
 
 # Remove branch Feature
-
-[12] git branch -d feature/1-add-cart.model.js [13] git push origin -d
+```sh
+[12] git branch -d feature/1-add-cart.model.js 
+[13] git push origin -d
 feature/1-add-cart.model.js
+```
 
 # Rebase Branch Feature
 
@@ -94,15 +106,19 @@ feature/1-add-cart.model.js
 # pull -r develop (avoid push force other)
 
 # note: if used to merge never rebase
-
-[13] git rebase develop [14] git rebase --continue [15] git add . [16] git push
--f
+```sh
+[13] git rebase develop 
+[14] git rebase --continue 
+[15] git add . 
+[16] git push -f
+```
 
 # always merge code into master not rebase
 
 # Merge new update to before commit
-
+```sh
 [17] git commit --amend
+```
 
 # Remove and Re add remote
 
@@ -111,53 +127,53 @@ feature/1-add-cart.model.js
 # Test git stash
 
 - Case 1:
-
+```sh
 [21] git stash
 
 [22] git stash list
 
 [23] git stash pop
-
+```
 - Case 2:
-
+```sh
 [21-1] git stash save new-idea
 
 [23] git stash apply 0
-
+```
 # Git reflog git log
-
+```sh
 [24] git relog [25] git log --oneline -n 10 --no-merges
-
+```
 # Git cherry-pick
-
+```sh
 [26] git checkout -b [branch] [commit]
 
 [27] git cherry-pick [commit] [commit]
-
+```
 # Git revert
-
+```sh
 [27] git log --oneline
 
 [28] git revert [ea584a8]
-
+```
 # Rename
-
+```sh
 [29] git branch -M new_name
-
+```
 # Decorator log
-
+```sh
 [30] git log --graph --decorate --oneline
-
+```
 # Switch back branch
-
+```sh
 [31] git checkout -
-
+```
 # Git commit soft
-
+```sh
 [32] git log (về lại commit trên origin)
 
 [33] git reset --soft f2f71c8dd19cfda5427587e509981b44f55ade98
-
+```
 ```sh
 Cả hai lệnh đều thay đổi lịch sử commit, nên nếu bạn đã đẩy (push) các commit lên remote repository, việc sử dụng git reset có thể gây rắc rối khi làm việc nhóm. Trong trường hợp này, cần sử dụng git revert để tạo commit mới thay vì xóa lịch sử.
 Nếu bạn vô tình sử dụng git reset --hard và mất dữ liệu, bạn có thể thử khôi phục bằng cách kiểm tra git reflog để tìm commit bị mất và reset lại.
